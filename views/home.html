@@ -1,0 +1,230 @@
+
+<nav class="menu">
+  <input type="checkbox" ng-href="#" class="menu-open" name="menu-open" id="menu-open"/>
+  <label class="menu-open-button" for="menu-open">
+    <span class="hamburger hamburger-1"></span>
+    <span class="hamburger hamburger-2"></span>
+    <span class="hamburger hamburger-3"></span>
+  </label>
+
+  <a ng-href="https://www.facebook.com/michaelmitrakos" target="_blank" class="menu-item"> <i class="fa fa-facebook"></i> </a>
+  <a ng-href="https://www.twitter.com/mike_mitrakos" target="_blank" class="menu-item"> <i class="fa fa-twitter"></i> </a>
+  <a ng-href="https://www.linkedin.com/in/michaelmitrakos" target="_blank" class="menu-item"> <i class="fa fa-linkedin"></i> </a>
+  <a ng-href="https://www.github.com/mitrakmt" class="menu-item" target="_blank"> <i class="fa fa-github"></i> </a>
+  <a ng-href="https://angel.co/mike_mitrakos" target="_blank" class="menu-item"> <i class="fa fa-angellist fa-custom"></i> </a>
+</nav>
+
+<div class="ProfilePic">
+  <img ng-src="images/profile5.jpg">
+</div>
+
+<md-content class="landing-text" layout-margin layout-padding>
+  <p class="md-display-1 landing-name">Michael Mitrakos</p>
+  <p class="md-display-4 landing-role" style="margin-bottom:-30px;">Front-End Developer</p>
+  <p class="md-display-4 landing-role" style="margin-top:-45px;">Angular & Javascript</p>
+  <p class="md-primary"><i>Board director @ <a ng-href="https://www.seatohio.org" target="_blank">Seat At The Table</a></i></p>
+</md-content>
+
+<br>
+
+<!-- filters -->
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="shadowed-goo">
+
+          <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+          <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
+          <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
+          <feOffset in="shadow" dx="1" dy="1" result="shadow" />
+          <feBlend in2="shadow" in="goo" result="goo" />
+          <feBlend in2="goo" in="SourceGraphic" result="mix" />
+      </filter>
+      <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+          <feBlend in2="goo" in="SourceGraphic" result="mix" />
+      </filter>
+    </defs>
+</svg>
+
+  <md-card class="main-card" class="md-padding work-examples" layout-margin layout-padding>
+    <div class="card-content">
+      <md-content class="card-section card-section-text card-section-text-img" layout-align="center center">
+        <div class="card-section-half">
+          <h1 class="animate slideInLeft">SEAT Hackathon</h1>
+          <p class="animate slideInLeft delay-2">I designed and developed a web application for the SEAT & Microsoft Hackathon. The goal was to allow a user to sign up, create or join a project, and collaborate around the idea before the event. <br><br><strong>Skills used:</strong> Angular 1x, Angular Material, Firebase, AngularFire, jQuery, HTML5, CSS3, JavaScript, form validation, Chrome Developer Tools, Github, and Bower.<br><br>
+          <a class="website-name clickable" style="decoration:none;" ng-href="http://www.seathack.io" target="_blank" class="clickable"><i>www.seathack.io</i></a></p>
+        </div>
+        <div class="card-section-half website-picture">
+          <img class="animate" ng-src="images/SEAT6.jpg" alt="" />
+          <img class="animate" ng-src="images/SEAT7.jpg" alt="" />
+        </div>
+      </md-content>
+      <md-content class="card-section card-section-text centered"  layout-align="center center">
+        <h1 class="animate scaleIn">Epidemic Site (under construction)</h1>
+        <br>
+        <p class="animate slideInLeft delay-3">This is a web application that I co-built which shows the real-time spread of various diseases. Our goal was to make a complex algorithm that takes into account speed, location proximity, disease resistance and strength.<br><br><strong>Skills used:</strong> Angular 1x, HTML5, CSS3, JavaScript, Canvas, SASS, Firebase, Github, and Gulp.<br><br>
+        <div class="atom website-picture-2">
+          <div class="electron"></div>
+          <div class="electron"></div>
+          <div class="electron"></div>
+        </div>
+      </md-content>
+      <md-content class="card-section card-section-text card-section-text-img"  layout-align="center center">
+        <div class="card-section-half">
+          <h1 class="animate slideInLeft">Three Rivers Photography</h1>
+          <p class="animate slideInLeft delay-2">I was tasked with creating a business portfolio website for a Pittsburgh based photography company. This was a straight forward project to best represent their wedding photography business. <br><br><strong>Skills used:</strong> HTML5, CSS3, JavaScript, Firebase, and jQuery.<br><br>
+            <a class="website-name clickable" style="decoration:none;" ng-href="http://www.3riversphotos.com" target="_blank"><i>www.3riversphotos.com</i></a></p>
+        </div>
+        <div class="card-section-half website-picture">
+          <img class="animate" ng-src="images/3riversphotos.jpg" alt="" />
+          <img class="animate" ng-src="images/3riversphotos2.jpg" alt="" />
+        </div>
+      </md-content>
+      <md-content class="card-section card-section-text centered"  layout-align="center center">
+        <div class="card-section-half">
+          <h1 class="animate scaleIn">Orthodox Calendar Company</h1>
+          <p class="animate slideInLeft delay-2">The OCC is an international christian calendar and apparel business. My goal was to create an appealing and easy to use eCommerce application for worldwide sales.<br><br>
+            <a class="website-name clickable" style="decoration:none;" ng-href="http://www.livesofthesaintscalendar.com" target="_blank"><i>www.livesofthesaintscalendar.com</i></a></p>
+        </div>
+        <div class="card-section-half website-picture-2">
+          <img class="animate occ-image" ng-src="images/livesofthesaints.jpg" alt="" />
+        </div>
+      </md-content>
+    </div>
+
+
+    <nav class="card-nav">
+      <ul class="card-nav-list">
+        <li class="card-nav-item">
+          <a ng-href="" class="card-nav-link flex-row">
+            <div class="card-section-half">
+              <span class="blue-line animate scaleInLeft delay-3"></span>
+              <span class="white-line animate scaleInLeft delay-4"></span>
+            </div>
+            <div class="card-section-half">
+              <span class="white-circle animate slideInRight delay-5"></span>
+            </div>
+          </a>
+        </li>
+        <li class="card-nav-item">
+          <a ng-href="" class="card-nav-link centered">
+            <span class="blue-line animate scaleIn delay-3"></span>
+            <span class="white-circle animate scaleIn delay-5"></span>
+          </a>
+        </li>
+        <li class="card-nav-item">
+          <a ng-href="" class="card-nav-link">
+            <span class="blue-line animate scaleInLeft delay-2"></span>
+            <span class="white-line animate scaleInLeft delay-4"></span>
+            <span class="white-line animate scaleInLeft delay-5"></span>
+          </a>
+        </li>
+        <li class="card-nav-item">
+          <a ng-href="" class="card-nav-link flex-row">
+            <div class="card-section-half">
+              <span class="blue-line animate scaleInLeft delay-3"></span>
+              <span class="white-line animate scaleInLeft delay-4"></span>
+            </div>
+            <div class="card-section-half">
+              <span class="white-circle animate slideInRight delay-5"></span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+  </md-card>
+
+<md-content class="skills-section">
+  <div class="title skills-title">
+    <br><br>
+    <p class="md-display-3">Technical Skills</p>
+  </div>
+<div layout-sm="column" layout="row" layout-md="row" layout-xs="column">
+  <md-card layout layout-align="center" class="skills-card" flex>
+
+    <ul class="skills-bar-container">
+      <label>HTML5</label>
+      <span class="percent" id="html-pourcent"></span>
+      <li>
+        <span class="progressbar progressred" id="progress-html"></span>
+      </li>
+
+      <label>CSS3 & SASS</label>
+      <span class="percent" id="css-pourcent"></span>
+      <li>
+        <span class="progressbar progressblue" id="progress-css"></span>
+      </li>
+
+      <label>Javascript & jQuery</label>
+      <span class="percent" id="javascript-pourcent"></span>
+      <li>
+        <span class="progressbar progresspurple" id="progress-javascript"></span>
+      </li>
+
+      <label>AngularJS & Angular Material</label>
+      <span class="percent" id="angular-pourcent"></span>
+      <li>
+        <span class="progressbar progressgreen" id="progress-angular"></span>
+      </li>
+
+      <label>Firebase / Angularfire</label>
+      <span class="percent" id="firebase-pourcent"></span>
+        <li>
+          <span class="progressbar progressorange" id="progress-firebase"></span>
+        </li>
+
+      <label>Git / Github</label>
+      <span class="percent" id="github-pourcent"></span>
+        <li>
+          <span class="progressbar progressgithub" id="progress-github"></span>
+        </li>
+
+    	</ul>
+    </div>
+    </md-card>
+  </md-content>
+
+  <md-content class="about-section" layout="row" layout-xs="column" layout-sm="column" layout-padding layout-margin>
+    <div class="panel" flex>
+      <p class="about-me-paragraph">
+        I enjoy turning complex problems into simple, intuitive and beautiful interface designs. Having worked with clients ranging from modeling to home building, I have a wealth of development experience and design sense to bring to the table. When I'm not coding <a class="clickable" data-toggle="modal" data-target="#mapModal"><strong>or traveling</strong></a>, you'll find me reading, in the gym or playing hockey. 🏒
+      </p>
+    </div>
+    <div class="panel" layout="column" flex>
+      <div layout="row" flex>
+        <a ng-href="https://www.twitter.com/mike_mitrakos" target="_blank" class="social-logo"> <i class="fa fa-twitter"></i> </a>
+        <p>Follow <a ng-href="http://www.twitter.com/mike_mitrakos" target="_blank" class="clickable">@mike_mitrakos</a> for web design & development or remote working articles and opinions</p>
+      </div>
+      <div layout="row" flex>
+        <a ng-href="https://www.github.com/mitrakmt" class="social-logo" target="_blank"> <i class="fa fa-github"></i> </a>
+        <p>View <a ng-href="http://www.github.com/mitrakmt" class="clickable" target="_blank">@mitrakmt</a> on GitHub for some of my projects including SeatHack & Epidemic</p>
+      </div>
+      <div layout="row" flex>
+        <a ng-href="https://www.linkedin.com/in/michaelmitrakos" target="_blank" class="social-logo"> <i class="fa fa-linkedin"></i> </a>
+        <p>View my <a ng-href="https://www.linkedin.com/in/michaelmitrakos" class="clickable" target="_blank">LinkedIn profile</a> for a full view of my professional experience</p>
+      </div>
+    </div>
+    <div class="panel" flex>
+      <p>
+        <span data-toggle="modal" data-target="#awaModal" class="clickable">AWARDS & RECOGNITIONS</span> <br>
+          View my personal awards and professional recognitions <br><br>
+        <span data-toggle="modal" data-target="#artModal" class="clickable">ARTICLES</span> <br>
+          Read popular articles I've authored <br><br>
+        <span data-toggle="modal" data-target="#proModal" class="clickable">MORE PROJECTS</span> <br>
+          Check out some of my other projects :) <br><br>
+      </p>
+    </div>
+  </md-content>
+
+  <md-content>
+    <p class="footer"><i>Made with love by Michael Mitrakos in 🇦🇺, 🇰🇷, 🇺🇸, 🇬🇷</i></p>
+  </md-content>
+
+  <div ng-include="'views/partials/articles.html'"></div>
+  <div ng-include="'views/partials/awards.html'"></div>
+  <div ng-include="'views/partials/testimonials.html'"></div>
+  <div ng-include="'views/partials/map.html'"></div>
+  <div ng-include="'views/partials/projects.html'"></div>
