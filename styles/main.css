@@ -1113,12 +1113,16 @@ md-content {
   }
 
   .ProfilePic img {
-    height: 550px;
+    height: 250px;
     opacity: 0;
   }
 
   .skills-title {
     margin-bottom: 0px;
+  }
+
+  .spotify-section {
+    padding-bottom: 0px;
   }
 
   .modal-dialog {
