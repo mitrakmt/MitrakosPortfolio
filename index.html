@@ -10,6 +10,51 @@
  		<link rel="shortcut icon" type="image/png" href="http://michaelmitrakos.com/favicon.ico"/>
 		<meta name="google-site-verification" content="HiKRhxEu5jqbYisaiHvw6C8ESaUGmz6whBahBFFqusQ" />
 
+    <script type='text/javascript' src='https://www.gstatic.com/charts/loader.js'></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.charts.load('current', {'packages': ['geochart']});
+     google.charts.setOnLoadCallback(drawMarkersMap);
+
+      function drawMarkersMap() {
+        ['Country'],
+        ['China'],
+        ['United States'],
+        ['Germany'],
+        ['Canada'],
+        ['France'],
+        ['Spain'],
+        ['Sweden'],
+        ['The Netherlands'],
+        ['Mexico'],
+        ['Greece'],
+        ['Australia'],
+        ['New Zealand'],
+        ['Indonesia'],
+        ['Malaysia'],
+        ['Taiwan'],
+        ['The Bahamas'],
+        ['Dominican Republic'],
+        ['Belgium'],
+        ['Australia'],
+        ['Czech Republic'],
+        ['Japan'],
+        ['Singapore'],
+        ['United Kingdom']
+
+      var options = {
+        region: 'IT',
+        displayMode: 'markers',
+        colorAxis: {colors: ['green', 'blue']}
+      };
+
+      var chart = new google.visualization.GeoChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+    };
+    </script>
+</head>
+</html>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.css">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angularjs-toaster/0.4.9/toaster.css" />
@@ -36,52 +81,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angularjs-toaster/0.4.9/toaster.js"></script>
 
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['geochart']});
-      google.charts.setOnLoadCallback(drawRegionsMap);
-
-      function drawRegionsMap() {
-
-        var data = google.visualization.arrayToDataTable([
-          ['Country'],
-          ['China'],
-          ['United States'],
-          ['Germany'],
-          ['Canada'],
-          ['France'],
-          ['Spain'],
-          ['Sweden'],
-          ['The Netherlands'],
-          ['Mexico'],
-          ['Greece'],
-          ['Australia'],
-          ['New Zealand'],
-          ['Indonesia'],
-          ['Malaysia'],
-          ['Taiwan'],
-          ['The Bahamas'],
-          ['Dominican Republic'],
-          ['Belgium'],
-          ['Australia'],
-          ['Czech Republic'],
-          ['Japan'],
-          ['Singapore'],
-          ['United Kingdom']
-        ]);
-
-        var options = {
-          defaultColor: '#3288E6',
-          keepAspectRatio: true
-        };
-
-        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
-
-        chart.draw(data, options);
-      }
-    </script>
-
     <!-- Angular Material Library -->
     <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material-icons/0.6.0/angular-material-icons.min.js"></script>
@@ -99,9 +98,7 @@
     </script>
 
     <script src="scripts/app.js"></script>
-
     <script src="scripts/controllers/home.js"></script>
-
 
 </body>
 </html>
