@@ -10,47 +10,49 @@
  		<link rel="shortcut icon" type="image/png" href="http://michaelmitrakos.com/favicon.ico"/>
 		<meta name="google-site-verification" content="HiKRhxEu5jqbYisaiHvw6C8ESaUGmz6whBahBFFqusQ" />
 
-    <script type='text/javascript' src='https://www.gstatic.com/charts/loader.js'></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script type='text/javascript'>
-      google.charts.load('current', {'packages': ['geochart']});
-     google.charts.setOnLoadCallback(drawMarkersMap);
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['geochart']});
+      google.charts.setOnLoadCallback(drawRegionsMap);
 
-      function drawMarkersMap() {
-        ['Country'],
-        ['China'],
-        ['United States'],
-        ['Germany'],
-        ['Canada'],
-        ['France'],
-        ['Spain'],
-        ['Sweden'],
-        ['The Netherlands'],
-        ['Mexico'],
-        ['Greece'],
-        ['Australia'],
-        ['New Zealand'],
-        ['Indonesia'],
-        ['Malaysia'],
-        ['Taiwan'],
-        ['The Bahamas'],
-        ['Dominican Republic'],
-        ['Belgium'],
-        ['Australia'],
-        ['Czech Republic'],
-        ['Japan'],
-        ['Singapore'],
-        ['United Kingdom']
+      function drawRegionsMap() {
 
-      var options = {
-        region: 'IT',
-        displayMode: 'markers',
-        colorAxis: {colors: ['green', 'blue']}
-      };
+        var data = google.visualization.arrayToDataTable([
+          ['Country'],
+          ['China'],
+          ['United States'],
+          ['Germany'],
+          ['Canada'],
+          ['France'],
+          ['Spain'],
+          ['Sweden'],
+          ['The Netherlands'],
+          ['Mexico'],
+          ['Greece'],
+          ['Australia'],
+          ['New Zealand'],
+          ['Indonesia'],
+          ['Malaysia'],
+          ['Taiwan'],
+          ['The Bahamas'],
+          ['Dominican Republic'],
+          ['Belgium'],
+          ['Australia'],
+          ['Czech Republic'],
+          ['Japan'],
+          ['Singapore'],
+          ['United Kingdom']
+        ]);
 
-      var chart = new google.visualization.GeoChart(document.getElementById('chart_div'));
-      chart.draw(data, options);
-    };
+        var options = {
+          defaultColor: '#388AE3'
+        };
+
+        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+        chart.draw(data, options);
+      }
     </script>
 </head>
 </html>
