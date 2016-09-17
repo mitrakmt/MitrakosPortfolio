@@ -20,7 +20,7 @@
         },3500);
 
         setTimeout(function() {
-          $('#javascript-pourcent').html('50%');
+          $('#javascript-pourcent').html('90%');
         },4200);
 
         setTimeout(function() {
@@ -28,11 +28,11 @@
         },4900);
 
         setTimeout(function() {
-          $('#angular-pourcent').html('65%');
+          $('#angular-pourcent').html('85%');
         },4500);
 
         setTimeout(function() {
-          $('#github-pourcent').html('85%');
+          $('#github-pourcent').html('90%');
         },7200);
 
         $scope.color = {

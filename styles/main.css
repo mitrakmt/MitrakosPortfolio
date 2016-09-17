@@ -866,24 +866,24 @@ md-content {
 
 @-webkit-keyframes progress-html{0%{width: 0%;} 100%{ width: 90%;}}
 @-webkit-keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
-@-webkit-keyframes progress-javascript{0%{width: 0%;} 100%{ width: 50%;}}
+@-webkit-keyframes progress-javascript{0%{width: 0%;} 100%{ width: 90%;}}
 @-webkit-keyframes progress-firebase{0%{width: 0%;} 100%{ width: 70%;}}
-@-webkit-keyframes progress-angular{0%{width: 0%;} 100%{ width: 65%;}}
-@-webkit-keyframes progress-github{0%{width: 0%;} 100%{ width: 85%;}}
+@-webkit-keyframes progress-angular{0%{width: 0%;} 100%{ width: 90%;}}
+@-webkit-keyframes progress-github{0%{width: 0%;} 100%{ width: 90%;}}
 
 @-moz-keyframes progress-html{0%{width: 0%;} 100%{ width: 90%;}}
 @-moz-keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
-@-moz-keyframes progress-javascript{0%{width: 0%;} 100%{ width: 50%;}}
+@-moz-keyframes progress-javascript{0%{width: 0%;} 100%{ width: 90%;}}
 @-moz-keyframes progress-firebase{0%{width: 0%;} 100%{ width: 70%;}}
-@-moz-keyframes progress-angular{0%{width: 0%;} 100%{ width: 65%;}}
-@-moz-keyframes progress-github{0%{width: 0%;} 100%{ width: 85%;}}
+@-moz-keyframes progress-angular{0%{width: 0%;} 100%{ width: 90%;}}
+@-moz-keyframes progress-github{0%{width: 0%;} 100%{ width: 90%;}}
 
 @keyframes progress-html{0%{width: 0%;} 100%{ width: 90%;}}
 @keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
-@keyframes progress-javascript{0%{width: 0%;} 100%{ width: 50%;}}
+@keyframes progress-javascript{0%{width: 0%;} 100%{ width: 90%;}}
 @keyframes progress-firebase{0%{width: 0%;} 100%{ width: 70%;}}
-@keyframes progress-angular{0%{width: 0%;} 100%{ width: 65%;}}
-@keyframes progress-github{0%{width: 0%;} 100%{ width: 85%;}}
+@keyframes progress-angular{0%{width: 0%;} 100%{ width: 90%;}}
+@keyframes progress-github{0%{width: 0%;} 100%{ width: 90%;}}
 
 /* About section */
 
