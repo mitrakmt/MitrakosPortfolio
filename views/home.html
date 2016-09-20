@@ -15,7 +15,26 @@
 </nav>
 
 <div class="ProfilePic">
-  <img ng-src="images/profile5.jpg">
+  <!-- <img ng-src="images/profile5.jpg"> -->
+  <md-card class="article-promo" text-align="center">
+    <!-- <h3 class="md-display-2">Articles</h3> -->
+
+    <div class="article">
+      <h3 class="md-title"><strong>Articles</strong></h3>
+      <md-divider></md-divider>
+      <h3 class="md-title"><a href="https://medium.com/@mike_mitrakos/data-structure-stack-in-javascript-714f45dbf889#.edgwirx3t" target="_blank">Implement a Stack in JavaScript</a></h3>
+      <md-divider></md-divider>
+      <h3 class="md-title"><a href="" target="_blank">Implement a Queue in JavaScript</a></h3>
+      <md-divider></md-divider>
+      <h3 class="md-title"><a href="" target="_blank">Implement a Hash Table in JavaScript</a></h3>
+      <md-divider></md-divider>
+      <h3 class="md-title"><a href="" target="_blank">Implement a Binary Search Tree in JavaScript</a></h3>
+      <md-divider></md-divider>
+      <h3 class="md-title"><a href="" target="_blank">Implement a Tree in JavaScript</a></h3>
+      <md-divider></md-divider>
+      <h3 class="md-title"><a href="" target="_blank">Implement a Linked List in JavaScript</a></h3>
+    </div>
+  </md-card>
 </div>
 
 <md-content class="landing-text" layout-margin layout-padding>
@@ -154,13 +173,13 @@
   <md-card layout layout-align="center" class="skills-card" flex>
 
     <ul class="skills-bar-container">
-      <label>HTML5</label>
+      <label>HTML</label>
       <span class="percent" id="html-pourcent"></span>
       <li>
         <span class="progressbar progressred" id="progress-html"></span>
       </li>
 
-      <label>CSS3 & SASS</label>
+      <label>CSS & SASS</label>
       <span class="percent" id="css-pourcent"></span>
       <li>
         <span class="progressbar progressblue" id="progress-css"></span>
@@ -178,17 +197,30 @@
         <span class="progressbar progressgreen" id="progress-angular"></span>
       </li>
 
-      <label>Firebase / Angularfire</label>
-      <span class="percent" id="firebase-pourcent"></span>
-        <li>
-          <span class="progressbar progressorange" id="progress-firebase"></span>
-        </li>
-
-      <label>Git / Github</label>
+      <label>Git</label>
       <span class="percent" id="github-pourcent"></span>
         <li>
           <span class="progressbar progressgithub" id="progress-github"></span>
         </li>
+
+      <label>React</label>
+      <span class="percent" id="react-pourcent"></span>
+        <li>
+          <span class="progressbar progressreact" id="progress-react"></span>
+        </li>
+
+      <label>Node</label>
+      <span class="percent" id="node-pourcent"></span>
+        <li>
+          <span class="progressbar progressnode" id="progress-node"></span>
+        </li>
+
+        <label>Firebase</label>
+        <span class="percent" id="firebase-pourcent"></span>
+          <li>
+            <span class="progressbar progressorange" id="progress-firebase"></span>
+          </li>
+
 
     	</ul>
     </div>

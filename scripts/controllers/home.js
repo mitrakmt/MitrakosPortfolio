@@ -33,7 +33,15 @@
 
         setTimeout(function() {
           $('#github-pourcent').html('90%');
-        },7200);
+        },4500);
+
+        setTimeout(function() {
+          $('#react-pourcent').html('80%');
+        },4500);
+
+        setTimeout(function() {
+          $('#node-pourcent').html('85%');
+        },4500);
 
         $scope.color = {
           red: 0,

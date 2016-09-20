@@ -21,6 +21,28 @@ md-card {
   font-size: 35px !important;
 }
 
+.article-promo {
+  height: 480px;
+  position: relative;
+  float: right;
+  width: 400px;
+  border-radius: 10px;
+  margin: 60px;
+  margin-right: 130px;
+  opacity: .85;
+}
+
+.article-promo h3 {
+  color: black;
+  text-align: center;
+  padding-bottom: 12px;
+  padding-top: 0;
+}
+
+.article-promo a:link {
+  color: #3288E6;
+}
+
 .title {
   text-align: center;
 }
@@ -829,18 +851,11 @@ md-content {
   animation-delay: 2.1s;
 }
 
-#progress-firebase {
-  -webkit-animation-name: progress-firebase;
-  animation-name: progress-firebase;
-  -webkit-animation-delay: 2.8s;
-  animation-delay: 2.8s;
-}
-
 #progress-angular {
   -webkit-animation-name: progress-angular;
   animation-name: progress-angular;
-  -webkit-animation-delay: 2.7s;
-  animation-delay: 2.7s;
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
 }
 
 #progress-material {
@@ -857,33 +872,62 @@ md-content {
   animation-delay: 3.5s;
 }
 
+#progress-react {
+  -webkit-animation-name: progress-react;
+  animation-name: progress-react;
+  -webkit-animation-delay: 3.7s;
+  animation-delay: 3.7s;
+}
+
+#progress-node {
+  -webkit-animation-name: progress-node;
+  animation-name: progress-node;
+  -webkit-animation-delay: 3.8s;
+  animation-delay: 3.8s;
+}
+
+#progress-firebase {
+  -webkit-animation-name: progress-firebase;
+  animation-name: progress-firebase;
+  -webkit-animation-delay: 4.0s;
+  animation-delay: 4.0s;
+}
+
 .progressred { background-color: #c0392b; }
 .progressblue { background-color: #1199ff; }
 .progresspurple { background-color: #9b59b6; }
 .progressorange { background-color: orange; }
 .progressgreen { background-color: #DD1B16; }
 .progressgithub { background-color: #512C79; }
+.progressreact { background-color: #67DAF9; }
+.progressnode { background-color: #689D66; }
 
 @-webkit-keyframes progress-html{0%{width: 0%;} 100%{ width: 90%;}}
 @-webkit-keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
 @-webkit-keyframes progress-javascript{0%{width: 0%;} 100%{ width: 90%;}}
 @-webkit-keyframes progress-firebase{0%{width: 0%;} 100%{ width: 70%;}}
-@-webkit-keyframes progress-angular{0%{width: 0%;} 100%{ width: 90%;}}
+@-webkit-keyframes progress-angular{0%{width: 0%;} 100%{ width: 85%;}}
 @-webkit-keyframes progress-github{0%{width: 0%;} 100%{ width: 90%;}}
+@-webkit-keyframes progress-react{0%{width: 0%;} 100%{ width: 80%;}}
+@-webkit-keyframes progress-node{0%{width: 0%;} 100%{ width: 85%;}}
 
 @-moz-keyframes progress-html{0%{width: 0%;} 100%{ width: 90%;}}
 @-moz-keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
 @-moz-keyframes progress-javascript{0%{width: 0%;} 100%{ width: 90%;}}
 @-moz-keyframes progress-firebase{0%{width: 0%;} 100%{ width: 70%;}}
-@-moz-keyframes progress-angular{0%{width: 0%;} 100%{ width: 90%;}}
+@-moz-keyframes progress-angular{0%{width: 0%;} 100%{ width: 85%;}}
 @-moz-keyframes progress-github{0%{width: 0%;} 100%{ width: 90%;}}
+@-moz-keyframes progress-react{0%{width: 0%;} 100%{ width: 80%;}}
+@-moz-keyframes progress-node{0%{width: 0%;} 100%{ width: 85%;}}
 
 @keyframes progress-html{0%{width: 0%;} 100%{ width: 90%;}}
 @keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
 @keyframes progress-javascript{0%{width: 0%;} 100%{ width: 90%;}}
 @keyframes progress-firebase{0%{width: 0%;} 100%{ width: 70%;}}
-@keyframes progress-angular{0%{width: 0%;} 100%{ width: 90%;}}
+@keyframes progress-angular{0%{width: 0%;} 100%{ width: 85%;}}
 @keyframes progress-github{0%{width: 0%;} 100%{ width: 90%;}}
+@keyframes progress-react{0%{width: 0%;} 100%{ width: 80%;}}
+@keyframes progress-node{0%{width: 0%;} 100%{ width: 85%;}}
 
 /* About section */
 
