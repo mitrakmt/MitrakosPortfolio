@@ -830,25 +830,18 @@ md-content {
 	animation-fill-mode: both;
 }
 
-#progress-html {
-  -webkit-animation-name: progress-html;
-  animation-name: progress-html;
-  -webkit-animation-delay: .7s;
-  animation-delay: .7s;
-}
-
-#progress-css {
-  -webkit-animation-name: progress-css;
-  animation-name: progress-css;
-  -webkit-animation-delay: 1.4s;
-  animation-delay: 1.4s;
-}
-
 #progress-javascript {
   -webkit-animation-name: progress-javascript;
   animation-name: progress-javascript;
   -webkit-animation-delay: 2.1s;
   animation-delay: 2.1s;
+}
+
+#progress-node {
+  -webkit-animation-name: progress-node;
+  animation-name: progress-node;
+  -webkit-animation-delay: 3.8s;
+  animation-delay: 3.8s;
 }
 
 #progress-angular2 {
@@ -865,18 +858,25 @@ md-content {
   animation-delay: 2.5s;
 }
 
-#progress-material {
-  -webkit-animation-name: progress-material;
-  animation-name: progress-material;
-  -webkit-animation-delay: 3.7s;
-  animation-delay: 3.9s;
-}
-
 #progress-git {
   -webkit-animation-name: progress-git;
   animation-name: progress-git;
   -webkit-animation-delay: 3.5s;
   animation-delay: 3.5s;
+}
+
+#progress-html {
+  -webkit-animation-name: progress-html;
+  animation-name: progress-html;
+  -webkit-animation-delay: .7s;
+  animation-delay: .7s;
+}
+
+#progress-css {
+  -webkit-animation-name: progress-css;
+  animation-name: progress-css;
+  -webkit-animation-delay: 1.4s;
+  animation-delay: 1.4s;
 }
 
 #progress-react {
@@ -886,26 +886,19 @@ md-content {
   animation-delay: 3.7s;
 }
 
-#progress-node {
-  -webkit-animation-name: progress-node;
-  animation-name: progress-node;
-  -webkit-animation-delay: 3.8s;
-  animation-delay: 3.8s;
-}
-
 .progressred { background-color: #c0392b; }
 .progressblue { background-color: #1199ff; }
 .progresspurple { background-color: #9b59b6; }
 .progressorange { background-color: orange; }
 .progressgreen { background-color: #DD1B16; }
-.progressgithub { background-color: #512C79; }
+.progressgit { background-color: #512C79; }
 .progressreact { background-color: #67DAF9; }
 .progressnode { background-color: #689D66; }
 
 @-webkit-keyframes progress-html{0%{width: 0%;} 100%{ width: 90%;}}
 @-webkit-keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
 @-webkit-keyframes progress-javascript{0%{width: 0%;} 100%{ width: 90%;}}
-@-webkit-keyframes progress-angular{0%{width: 0%;} 100%{ width: 90%;}}
+@-webkit-keyframes progress-angular2{0%{width: 0%;} 100%{ width: 90%;}}
 @-webkit-keyframes progress-angular{0%{width: 0%;} 100%{ width: 80%;}}
 @-webkit-keyframes progress-git{0%{width: 0%;} 100%{ width: 90%;}}
 @-webkit-keyframes progress-react{0%{width: 0%;} 100%{ width: 80%;}}
@@ -925,7 +918,7 @@ md-content {
 @keyframes progress-javascript{0%{width: 0%;} 100%{ width: 90%;}}
 @keyframes progress-angular2{0%{width: 0%;} 100%{ width: 90%;}}
 @keyframes progress-angular{0%{width: 0%;} 100%{ width: 80%;}}
-@keyframes progress-github{0%{width: 0%;} 100%{ width: 90%;}}
+@keyframes progress-git{0%{width: 0%;} 100%{ width: 90%;}}
 @keyframes progress-react{0%{width: 0%;} 100%{ width: 80%;}}
 @keyframes progress-node{0%{width: 0%;} 100%{ width: 85%;}}
 

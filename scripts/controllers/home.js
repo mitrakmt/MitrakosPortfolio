@@ -3,8 +3,8 @@
       app.controller('HomeController', function($scope, $document){
 
         // Skills
-        jQuery(document).ready(function(){
-    	     jQuery('.skillbar').each(function(){
+        jQuery(document).ready(function() {
+    	     jQuery('.skillbar').each(function() {
     		       jQuery(this).find('.skillbar-bar').animate({
     			          width:jQuery(this).attr('data-percent')
     		       },6000);
@@ -12,16 +12,12 @@
         });
 
         setTimeout(function() {
-          $('#html-pourcent').html('90%');
-        },2800);
-
-        setTimeout(function() {
-          $('#css-pourcent').html('90%');
-        },3500);
-
-        setTimeout(function() {
           $('#javascript-pourcent').html('95%');
         },4200);
+
+        setTimeout(function() {
+          $('#node-pourcent').html('95%');
+        },4500);
 
         setTimeout(function() {
           $('#angular2-pourcent').html('90%');
@@ -40,8 +36,12 @@
         },4500);
 
         setTimeout(function() {
-          $('#node-pourcent').html('95%');
-        },4500);
+          $('#html-pourcent').html('90%');
+        },2800);
+
+        setTimeout(function() {
+          $('#css-pourcent').html('90%');
+        },3500);
 
         $scope.color = {
           red: 0,
