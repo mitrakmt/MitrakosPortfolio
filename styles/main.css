@@ -893,11 +893,19 @@ md-content {
   animation-delay: 4.0s;
 }
 
+#progress-db {
+  -webkit-animation-name: progress-db;
+  animation-name: progress-db;
+  -webkit-animation-delay: 3.0s;
+  animation-delay: 3.0s;
+}
+
 .progressred { background-color: #c0392b; }
 .progressblue { background-color: #1199ff; }
 .progresspurple { background-color: #9b59b6; }
 .progressorange { background-color: orange; }
 .progressgreen { background-color: #DD1B16; }
+.progressdb { background-color: darkblue; }
 .progressyellow { background-color: #FFDB4F; }
 .progressgit { background-color: #512C79; }
 .progressreact { background-color: #67DAF9; }
@@ -907,6 +915,7 @@ md-content {
 @-webkit-keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
 @-webkit-keyframes progress-javascript{0%{width: 0%;} 100%{ width: 90%;}}
 @-webkit-keyframes progress-python{0%{width: 0%;} 100%{ width: 50%;}}
+@-webkit-keyframes progress-db{0%{width: 0%;} 100%{ width: 85%;}}
 @-webkit-keyframes progress-angular2{0%{width: 0%;} 100%{ width: 90%;}}
 @-webkit-keyframes progress-angular{0%{width: 0%;} 100%{ width: 80%;}}
 @-webkit-keyframes progress-git{0%{width: 0%;} 100%{ width: 90%;}}
@@ -917,6 +926,7 @@ md-content {
 @-moz-keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
 @-moz-keyframes progress-javascript{0%{width: 0%;} 100%{ width: 90%;}}
 @-moz-keyframes progress-python{0%{width: 0%;} 100%{ width: 50%;}}
+@-moz-keyframes progress-db{0%{width: 0%;} 100%{ width: 85%;}}
 @-moz-keyframes progress-angular2{0%{width: 0%;} 100%{ width: 90%;}}
 @-moz-keyframes progress-angular{0%{width: 0%;} 100%{ width: 80%;}}
 @-moz-keyframes progress-git{0%{width: 0%;} 100%{ width: 90%;}}
@@ -927,6 +937,7 @@ md-content {
 @keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
 @keyframes progress-javascript{0%{width: 0%;} 100%{ width: 90%;}}
 @keyframes progress-python{0%{width: 0%;} 100%{ width: 50%;}}
+@keyframes progress-db{0%{width: 0%;} 100%{ width:8590%;}}
 @keyframes progress-angular2{0%{width: 0%;} 100%{ width: 90%;}}
 @keyframes progress-angular{0%{width: 0%;} 100%{ width: 80%;}}
 @keyframes progress-git{0%{width: 0%;} 100%{ width: 90%;}}

@@ -24,6 +24,10 @@
         },4500);
 
         setTimeout(function() {
+          $('#db-pourcent').html('85%');
+        },4500);
+
+        setTimeout(function() {
           $('#angular2-pourcent').html('90%');
         },4500);
 
