@@ -905,7 +905,7 @@ md-content {
 .progresspurple { background-color: #9b59b6; }
 .progressorange { background-color: orange; }
 .progressgreen { background-color: #DD1B16; }
-.progressdb { background-color: darkblue; }
+.progressdb { background-color: #0094C5; }
 .progressyellow { background-color: #FFDB4F; }
 .progressgit { background-color: #512C79; }
 .progressreact { background-color: #67DAF9; }
@@ -937,7 +937,7 @@ md-content {
 @keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
 @keyframes progress-javascript{0%{width: 0%;} 100%{ width: 90%;}}
 @keyframes progress-python{0%{width: 0%;} 100%{ width: 50%;}}
-@keyframes progress-db{0%{width: 0%;} 100%{ width:8590%;}}
+@keyframes progress-db{0%{width: 0%;} 100%{ width:85%;}}
 @keyframes progress-angular2{0%{width: 0%;} 100%{ width: 90%;}}
 @keyframes progress-angular{0%{width: 0%;} 100%{ width: 80%;}}
 @keyframes progress-git{0%{width: 0%;} 100%{ width: 90%;}}
