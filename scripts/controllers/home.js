@@ -16,6 +16,10 @@
         },4200);
 
         setTimeout(function() {
+          $('#python-pourcent').html('50%');
+        },4200);
+
+        setTimeout(function() {
           $('#node-pourcent').html('95%');
         },4500);
 

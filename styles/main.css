@@ -837,25 +837,32 @@ md-content {
   animation-delay: 2.1s;
 }
 
+#progress-python {
+  -webkit-animation-name: progress-python;
+  animation-name: progress-python;
+  -webkit-animation-delay: 2.3s;
+  animation-delay: 2.3s;
+}
+
 #progress-node {
   -webkit-animation-name: progress-node;
   animation-name: progress-node;
-  -webkit-animation-delay: 3.8s;
-  animation-delay: 3.8s;
+  -webkit-animation-delay: 2.8s;
+  animation-delay: 2.8s;
 }
 
 #progress-angular2 {
   -webkit-animation-name: progress-angular2;
   animation-name: progress-angular2;
-  -webkit-animation-delay: 2.5s;
-  animation-delay: 2.5s;
+  -webkit-animation-delay: 2.9s;
+  animation-delay: 2.9s;
 }
 
 #progress-angular {
   -webkit-animation-name: progress-angular;
   animation-name: progress-angular;
-  -webkit-animation-delay: 2.5s;
-  animation-delay: 2.5s;
+  -webkit-animation-delay: 3.2s;
+  animation-delay: 3.2s;
 }
 
 #progress-git {
@@ -868,22 +875,22 @@ md-content {
 #progress-html {
   -webkit-animation-name: progress-html;
   animation-name: progress-html;
-  -webkit-animation-delay: .7s;
-  animation-delay: .7s;
+  -webkit-animation-delay: 3.7s;
+  animation-delay: 3.7s;
 }
 
 #progress-css {
   -webkit-animation-name: progress-css;
   animation-name: progress-css;
-  -webkit-animation-delay: 1.4s;
-  animation-delay: 1.4s;
+  -webkit-animation-delay: 3.9s;
+  animation-delay: 3.9s;
 }
 
 #progress-react {
   -webkit-animation-name: progress-react;
   animation-name: progress-react;
-  -webkit-animation-delay: 3.7s;
-  animation-delay: 3.7s;
+  -webkit-animation-delay: 4.0s;
+  animation-delay: 4.0s;
 }
 
 .progressred { background-color: #c0392b; }
@@ -891,6 +898,7 @@ md-content {
 .progresspurple { background-color: #9b59b6; }
 .progressorange { background-color: orange; }
 .progressgreen { background-color: #DD1B16; }
+.progressyellow { background-color: #FFDB4F; }
 .progressgit { background-color: #512C79; }
 .progressreact { background-color: #67DAF9; }
 .progressnode { background-color: #689D66; }
@@ -898,6 +906,7 @@ md-content {
 @-webkit-keyframes progress-html{0%{width: 0%;} 100%{ width: 90%;}}
 @-webkit-keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
 @-webkit-keyframes progress-javascript{0%{width: 0%;} 100%{ width: 90%;}}
+@-webkit-keyframes progress-python{0%{width: 0%;} 100%{ width: 50%;}}
 @-webkit-keyframes progress-angular2{0%{width: 0%;} 100%{ width: 90%;}}
 @-webkit-keyframes progress-angular{0%{width: 0%;} 100%{ width: 80%;}}
 @-webkit-keyframes progress-git{0%{width: 0%;} 100%{ width: 90%;}}
@@ -907,6 +916,7 @@ md-content {
 @-moz-keyframes progress-html{0%{width: 0%;} 100%{ width: 90%;}}
 @-moz-keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
 @-moz-keyframes progress-javascript{0%{width: 0%;} 100%{ width: 90%;}}
+@-moz-keyframes progress-python{0%{width: 0%;} 100%{ width: 50%;}}
 @-moz-keyframes progress-angular2{0%{width: 0%;} 100%{ width: 90%;}}
 @-moz-keyframes progress-angular{0%{width: 0%;} 100%{ width: 80%;}}
 @-moz-keyframes progress-git{0%{width: 0%;} 100%{ width: 90%;}}
@@ -916,6 +926,7 @@ md-content {
 @keyframes progress-html{0%{width: 0%;} 100%{ width: 90%;}}
 @keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
 @keyframes progress-javascript{0%{width: 0%;} 100%{ width: 90%;}}
+@keyframes progress-python{0%{width: 0%;} 100%{ width: 50%;}}
 @keyframes progress-angular2{0%{width: 0%;} 100%{ width: 90%;}}
 @keyframes progress-angular{0%{width: 0%;} 100%{ width: 80%;}}
 @keyframes progress-git{0%{width: 0%;} 100%{ width: 90%;}}
