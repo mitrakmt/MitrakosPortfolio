@@ -20,19 +20,19 @@
         },3500);
 
         setTimeout(function() {
-          $('#javascript-pourcent').html('90%');
+          $('#javascript-pourcent').html('95%');
         },4200);
 
         setTimeout(function() {
-          $('#firebase-pourcent').html('70%');
-        },4900);
-
-        setTimeout(function() {
-          $('#angular-pourcent').html('85%');
+          $('#angular2-pourcent').html('90%');
         },4500);
 
         setTimeout(function() {
-          $('#github-pourcent').html('90%');
+          $('#angular-pourcent').html('80%');
+        },4500);
+
+        setTimeout(function() {
+          $('#git-pourcent').html('90%');
         },4500);
 
         setTimeout(function() {
@@ -40,7 +40,7 @@
         },4500);
 
         setTimeout(function() {
-          $('#node-pourcent').html('85%');
+          $('#node-pourcent').html('95%');
         },4500);
 
         $scope.color = {
