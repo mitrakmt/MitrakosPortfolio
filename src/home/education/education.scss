@@ -1,0 +1,111 @@
+@import '../../shared.scss';
+
+.educationContainer {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+  background-color: $background-color;
+
+  &-header {
+    padding-top: 5vh;
+
+    h1 {
+      font-size: 7vw;
+    }
+  }
+
+  &-timeline {
+    width: 80%;
+    height: 10px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #E9EDF0;
+    display: flex;
+    align-self: center;
+    align-items: center;
+
+    &-leftCircle {
+      width: 25px;
+      height: 25px;
+      z-index: 100;
+      margin-left: -5px;
+      background-color: #E9EDF0;
+      border-radius: 50%;
+      
+      &-filling {
+        height: 60%;
+        width: 60%;
+        margin: auto;
+        margin-top: 6px;
+        background-color: #9941E0;
+        border-radius: 50%;
+      }
+    }
+
+    &-middleCircle {
+      width: 25px;
+      height: 25px;
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      margin-left: 49%;
+      align-self: center;
+      display: flex;
+      background-color: #E9EDF0;
+      border-radius: 50%;
+
+      &-filling {
+        height: 60%;
+        width: 60%;
+        background-color: #BD338D;
+        border-radius: 50%;
+      }
+    }
+
+    &-rightCircle {
+      width: 25px;
+      position: absolute;
+      height: 25px;
+      margin-left: auto;
+      right: 0;
+      z-index: 100;
+      margin-right: -8px;
+      align-items: flex-end;
+      justify-content: flex-end;
+      background-color: #E9EDF0;
+      border-radius: 50%;
+
+      &-filling {
+        height: 60%;
+        width: 60%;
+        margin: auto;
+        margin-top: 6px;
+        background-color: #E1263C;
+        border-radius: 50%;
+      }
+    }
+
+    &-meterFill {
+      background: linear-gradient(to right, #9941E0, $primary-color);
+      display: flex;
+      animation-name: timelineAnimation;
+      animation-duration: 3s;
+      height: 4px;
+      width: 100%;
+      margin-left: -5px;
+      justify-content: center;
+      align-self: center;
+      align-items: center;
+      z-index: 100;
+    }
+  }
+}
+
+@keyframes timelineAnimation {
+  0%   {width: 0%;}
+  100% {width: 99%;}
+}

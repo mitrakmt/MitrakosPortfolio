@@ -1,0 +1,18 @@
+@import '../shared.scss';
+
+.projectContainer {
+  &-backButton {
+    margin-left: 15px;
+
+      span {
+      color: white;
+      transition-duration: $transition-duration;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+
+  
+}

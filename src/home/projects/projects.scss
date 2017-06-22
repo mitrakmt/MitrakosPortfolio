@@ -1,0 +1,175 @@
+@import '../../shared.scss';
+
+.projectsContainer {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 150px;
+    left: 50%;
+    margin-top: -52px;
+    background-color: #e1253b;
+    z-index: 22;
+  }
+
+  &-header {
+    padding-top: 5vh;
+
+    h1 {
+      font-size: 7vw;
+    }
+  }
+
+  &-list {
+    width: 65vw;
+    background-color: $background-color;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 100;
+
+    &-entry {
+      height: 160px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-top: 0px transparent;
+      display: flex;
+      flex-direction: row;
+
+      &-background {
+        opacity: 0;
+        background-image: url('http://conradhotels3.hilton.com/resources/media/ch/en_US/img/shared/carousel/main/CN_chicagosunset.jpg');
+        position: absolute;
+        width: 59.9vw;
+        height: 160px;
+        margin-left: 5vw;
+        background-position: center 55%;
+        background-size: cover;
+        transition-duration: $transition-duration;
+
+        &:hover {
+          opacity: .08;
+        }
+      }
+
+      &-labelBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        left: 0;
+        min-width: 160px;
+        width: 160px;
+        z-index: 110;
+
+        h1 {
+          font-size: 70px;
+          color: $background-color;
+        }
+      }
+
+      &-heading {
+        display: flex;
+        flex-direction: column;
+        padding: 25px 20px 25px 20px;
+
+        h1 {
+          color: white;
+          font-size: 30px;
+          margin-bottom: 5px;
+        }
+
+        h3 {
+          color: $primary-color;
+          font-size: 20px;
+          font-weight: 200;
+          margin-top: 0;
+        }
+      }
+
+      &-arrow {
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-self: flex-end;
+        align-items: center;
+        width: 180px;
+        margin-left: auto;
+        height: 100%;
+        z-index: 170;
+        animation-duration: 1.0s;
+
+        &:hover {
+          animation-name: arrowAnimation;
+          animation-duration: 1.0s;
+          animation-iteration-count: infinite;
+        }
+
+        @keyframes arrowAnimation {
+            0%   {margin-right: 0px;}
+            50%  {margin-right: -30px;}
+            100% {margin-right: 0px;}
+        }
+      }
+    }
+  }
+}
+
+.arrow-link {
+  color: white;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+#background0 {
+  &:hover {
+    opacity: .08;
+  }
+}
+
+#background1 {
+  &:hover {
+    opacity: .08;
+  }
+}
+
+#background2 {
+  &:hover {
+    opacity: .08;
+  }
+}
+
+#background3 {
+  &:hover {
+    opacity: .08;
+  }
+}
+
+#background4 {
+  &:hover {
+    opacity: .08;
+  }
+}
+
+#background1 {
+  &:hover {
+    opacity: .08;
+  }
+}
+
+#background5 {
+  &:hover {
+    opacity: .08;
+  }
+}
+
+#background6 {
+  &:hover {
+    opacity: .08;
+  }
+}

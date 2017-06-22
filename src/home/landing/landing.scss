@@ -1,0 +1,377 @@
+@import '../../shared.scss';
+
+.backgroundImage {
+  position: absolute;
+  background-image: url('http://i67.tinypic.com/rws4t5.jpg');
+  top: 0;
+  left: 0;
+  opacity: .04;
+  filter: alpha(opacity=20);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+}
+
+.sidebar {
+  position: fixed;
+  width: 0;
+  left: 0;
+  background: $primary-color;
+  height: 100%;
+  z-index: 1000;
+  animation-duration: 1.0s;
+  animation-name: sidebarAnimationClose;
+}
+
+.sidebar-active {
+  animation-name: sidebarAnimation;
+  animation-duration: 1.0s;
+}
+
+@keyframes sidebarAnimation {
+    0%   {
+      width: 0;
+      left: 0;
+    }
+    50%  {
+      width: 100%;
+      margin-left: 0;
+    }
+    100% {
+      width: 0;
+      right: 0;
+      margin-left: 100%;
+    }
+}
+
+@keyframes sidebarAnimationClose {
+    100%   {
+      width: 0;
+      left: 0;
+    }
+    50%  {
+      width: 100%;
+      margin-left: 0;
+    }
+    0% {
+      width: 0;
+      right: 0;
+      margin-left: 100%;
+    }
+}
+
+.landingContainer {
+  background-color: $background-color;
+  height: 99.9vh;
+  width: 100vw;
+  margin: 0;
+  box-shadow: rgba(0, 0, 0, .2) 4px 4px 5px;
+  border-bottom: 1px solid $primary-color;
+
+  &-header {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    transition-delay: 0.5s;
+
+    &-menuList {
+      display: flex;
+      flex-direction: column;
+      align-content: flex-start;
+      align-self: flex-start;
+      padding-left: 100px;
+
+      h4 {
+        margin: 20px;
+        
+        &:hover {
+          color: $primary-color;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &-menuBar {
+      height: 100%;
+      left: 0;
+      width: 300px;
+      color: white;
+    }
+
+    h1 {
+      font-size: 7vw;
+      margin: 0;
+      padding-left: 12vw;
+      align-self: flex-start;
+      color: $primary-color;
+ 
+      &:first-child {
+        font-weight: 300;
+      }
+
+      &:nth-child(2) {
+        font-weight: 500;
+      }
+    }
+
+    &-sub {
+      font-size: 2vw;
+      font-weight: 100;
+      text-transform: uppercase;
+      display: flex;
+      flex-direction: row;
+      color: rgba(255,255,255,1.00);
+      align-self: flex-start;
+      padding-left: 12vw;      
+
+      h4 {
+        margin: 0;
+        font-weight: 200;
+      }
+
+      &-whiteLinLhorizontal01 {
+        display: block;
+        background-color: #fff;
+        margin-left: 15px;
+        height: 1px;
+        width: 14vw;
+        justify-content: center;
+        align-self: center;
+        -webkit-animation-duration: 1.5s;
+        animation-duration: 1.5s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-delay: 3.7s;
+        animation-name: subIn;
+      }
+
+      &-whiteLinLhorizontal02 {
+        display: block;
+        background-color: #fff;
+        width: 1px;
+        height: 20px;
+        justify-content: center;
+        align-self: center;
+        -webkit-animation-duration: 1.5s;
+        animation-duration: 1.5s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-delay: 3.9s;
+        animation-name: subIn;
+      }
+    }
+  }
+
+  &-discover {
+    display: block;
+    width: 100%;
+    position: absolute;
+    cursor: pointer;
+    bottom: 65px;
+    left: 0;
+    text-align: center;
+    color: rgba(255,255,255,0.60);
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    font-weight: 100;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-delay: 4.2s;
+    animation-name: discoverBtnIn;
+    z-index: 10;
+    -webkit-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  &-lineLeft {
+    position: fixed;
+    height: 100vh;
+    width: 1px;
+    left: 50px;
+    top: 0;
+    background-color: rgba(255,255,255,0.10);
+    z-index: 100;
+  }
+
+  &-lineTop {
+    width: 100vw;
+    height: 1px;
+    top: 50px;
+    left: 0;
+    position: absolute;
+    background-color: rgba(255,255,255,0.10);
+    z-index: 100;
+  }
+
+  &-lineRight {
+    height: 100vh;
+    width: 1px;
+    right: 50px;
+    top: 0;
+    position: fixed;
+    background-color: rgba(255,255,255,0.10);
+    z-index: 100;
+  }
+
+  &-lineBottom {
+    width: 100vw;
+    height: 1px;
+    bottom: 50px;
+    left: 0;
+    position: absolute;
+    background-color: rgba(255,255,255,0.10);
+    z-index: 100;
+  }
+
+  &-navIntro {
+    position: absolute;
+    top: calc(50% + 70px);
+    left: 0;
+    letter-spacing: 1.5px;
+    width: auto;
+    height: 50px;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    z-index: 99;
+    padding: 17px 0;
+    font-size: 14px;
+    font-weight: 300;
+
+    a {
+      text-decoration: none;
+      display: inline-block;
+      -webkit-animation-duration: 1.5s;
+      animation-duration: 1.5s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      animation-delay: 2s;
+      animation-name: fadeInLeft;
+      color: $primary-color;
+      -webkit-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+      transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+
+      &:hover {
+        color: white;
+        transition-duration: $transition-duration;
+      }
+    }
+  }
+
+  &-social {
+    position: absolute;
+    top: calc(50% - 150px);
+    right: 0;
+    width: auto;
+    height: 15px;
+    letter-spacing: 1.5px;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    transform-origin: bottom right;
+    z-index: 9980;
+    padding: 17px 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 300;
+
+    span {
+      -webkit-animation-duration: 1.7s;
+      animation-duration: 1.7s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      animation-delay: 2.2s;
+      animation-name: fadeInRight;
+      color: $primary-color;
+      -webkit-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+      transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+
+    a {
+      text-decoration: none;
+      display: inline-block;
+      -webkit-animation-duration: 1.5s;
+      animation-duration: 1.5s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      animation-delay: 2s;
+      animation-name: fadeInRight;
+      color: $primary-color;
+      -webkit-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+      transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+
+      &:hover {
+        color: white;
+        transition-duration: $transition-duration;
+      }
+    }
+  }
+
+  &-menuButton {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 25px;
+    top: 0;
+    left: 0;
+    padding: 17px 11px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    z-index: 101;
+    color: $primary-color;
+    -webkit-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+
+    &-line {
+      width: 25px;
+      border-bottom: 3px solid white;
+      margin-bottom: 6px;
+      border-color: $primary-color;
+      transition: 1.55s 0.3s;
+
+      &-active {
+        &-line {
+          width: 35px !important;
+        }
+
+        &:first-child {
+          transform: rotate(43deg);
+          transition: 1.5s 0.5s;
+          width: 35px !important;
+          margin-top: 5px;
+          top: 15px;
+          margin-bottom: -1px;
+          margin-left: -4px;
+          border-width: 5px;
+        }
+
+        &:nth-child(2) {
+          border-color: transparent;
+          transition-duration: 1.5s;
+        }
+
+        &:last-child {
+          transform: rotate(-405deg);
+          transition: 1.5s 0.5s;
+          width: 35px !important;
+          border-width: 5px;
+          margin-top: -13px;
+          margin-left: -5px;
+        }
+      }
+    }
+  }
+}
