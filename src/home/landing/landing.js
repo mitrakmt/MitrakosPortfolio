@@ -36,7 +36,7 @@ class Landing extends Component {
             <h1>Michael</h1>
             <h1>Mitrakos</h1>
             <div className="landingContainer-header-sub">
-              <h4>Software Developer</h4>
+              <h4>Senior Software Developer</h4>
               <span className="landingContainer-header-sub-whiteLinLhorizontal01" />
               <span className="landingContainer-header-sub-whiteLinLhorizontal02" />
             </div>
@@ -49,7 +49,6 @@ class Landing extends Component {
               <Link to={'/project/verys'} style={{color: 'white', textDecoration: 'none'}}><h4>Verys</h4></Link>
               <Link to={'/project/civility-international'} style={{color: 'white', textDecoration: 'none'}}><h4>Civility International</h4></Link>
               <Link to={'/project/momentum'} style={{color: 'white', textDecoration: 'none'}}><h4>Momentum Dashboard</h4></Link>
-              <Link to={'/project/healthyu'} style={{color: 'white', textDecoration: 'none'}}><h4>HealthyU</h4></Link>
               <Link to={'/project/seat-at-the-table'} style={{color: 'white', textDecoration: 'none'}}><h4>Seat At the Table</h4></Link>
               <Link to={'/project/wobble-labs'} style={{color: 'white', textDecoration: 'none'}}><h4>Wobble Labs</h4></Link>
             </div>

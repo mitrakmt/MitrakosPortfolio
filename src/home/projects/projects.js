@@ -28,7 +28,7 @@ class Projects extends Component {
       {
         letter: 'V',
         company: 'Verys',
-        title: 'Software Engineer',
+        title: 'Senior Software Engineer',
         imageName: 'verys-image',
         tagName: 'verys'
       },
@@ -52,13 +52,6 @@ class Projects extends Component {
         title: 'Software Engineering Instructor',
         imageName: 'hackreactor-image',
         tagName: 'hack-reactor'
-      },
-      {
-        letter: 'H',
-        company: 'HealthyU',
-        title: 'Chief Technology Officer',
-        imageName: 'healthyu-image',
-        tagName: 'healthyu'
       },
       {
         letter: 'S',
